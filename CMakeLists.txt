@@ -9,7 +9,8 @@ cmake_minimum_required ( VERSION 2.6 )
 include ( cmake/dist.cmake )
 include ( lua )
 
-install_lua_module ( cgilua src/cgilua/cgilua.lua ) # note: special location
+install_lua_module ( cgilua src/cgilua/cgilua.lua )
+# note: special location
 install_lua_module ( cgilua.authentication src/cgilua/authentication.lua )
 install_lua_module ( cgilua.cookies src/cgilua/cookies.lua )
 install_lua_module ( cgilua.dispatcher src/cgilua/dispatcher.lua )
