@@ -1,0 +1,93 @@
+type = "x86"
+arch = "Windows"
+author = "Roberto Ierusalimschy, André Carregal, Tomás Guisasola and others"
+depends = {
+[[lua ~> 5.1]],
+[[luafilesystem >= 1.5.0]],
+}
+
+desc = "Tool for creating dynamic Web pages and manipulating data from Web forms."
+version = "5.1.4"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib\lua\cgilua.lua]],
+[[lib\lua\cgilua\authentication.lua]],
+[[lib\lua\cgilua\cookies.lua]],
+[[lib\lua\cgilua\dispatcher.lua]],
+[[lib\lua\cgilua\loader.lua]],
+[[lib\lua\cgilua\lp.lua]],
+[[lib\lua\cgilua\mime.lua]],
+[[lib\lua\cgilua\post.lua]],
+[[lib\lua\cgilua\readuntil.lua]],
+[[lib\lua\cgilua\serialize.lua]],
+[[lib\lua\cgilua\session.lua]],
+[[lib\lua\cgilua\urlcode.lua]],
+}
+,
+Test = {
+[[share\cgilua\test\\tests\download.lua]],
+[[share\cgilua\test\\tests\env.lua]],
+[[share\cgilua\test\\tests\Makefile]],
+[[share\cgilua\test\\tests\overview.lp]],
+[[share\cgilua\test\\tests\prepara_sql2.lua]],
+[[share\cgilua\test\\tests\tcgi1.lua]],
+[[share\cgilua\test\\tests\test.html]],
+[[share\cgilua\test\\tests\test_conc.lua]],
+[[share\cgilua\test\\tests\test_cookies.lp]],
+[[share\cgilua\test\\tests\test_cookies.lua]],
+[[share\cgilua\test\\tests\test_err.lua]],
+[[share\cgilua\test\\tests\test_fs.lua]],
+[[share\cgilua\test\\tests\test_htk.lua]],
+[[share\cgilua\test\\tests\test_lib.lua]],
+[[share\cgilua\test\\tests\test_main.html]],
+[[share\cgilua\test\\tests\test_main.lp]],
+[[share\cgilua\test\\tests\test_main.lua]],
+[[share\cgilua\test\\tests\test_session.lua]],
+[[share\cgilua\test\\tests\test_sql.lua]],
+[[share\cgilua\test\\tests\test_sql2.lua]],
+[[share\cgilua\test\\tests\test_variables.lp]],
+[[share\cgilua\test\\tests\tfcgi1.lua]],
+[[share\cgilua\test\\tests\tmod1.lua]],
+}
+,
+Example = {
+[[share\cgilua\example\\examples\app.lua]],
+[[share\cgilua\example\\examples\authentication_conf.lua]],
+[[share\cgilua\example\\examples\cgilua\config.lua]],
+[[share\cgilua\example\\examples\check.lua]],
+[[share\cgilua\example\\examples\css\doc.css]],
+[[share\cgilua\example\\examples\img\keplerproject.gif]],
+[[share\cgilua\example\\examples\img\test.jpg]],
+[[share\cgilua\example\\examples\index.lp]],
+[[share\cgilua\example\\examples\jquery\jquery-1.2.3.min.js]],
+[[share\cgilua\example\\examples\login.lp]],
+[[share\cgilua\example\\examples\test.lp]],
+}
+,
+Data = {
+[[share\cgilua\README]],
+}
+,
+Documentation = {
+[[share\cgilua\doc\\doc\br\cgi-128.gif]],
+[[share\cgilua\doc\\doc\br\index.html]],
+[[share\cgilua\doc\\doc\br\libraries.html]],
+[[share\cgilua\doc\\doc\br\license.html]],
+[[share\cgilua\doc\\doc\br\manual.html]],
+[[share\cgilua\doc\\doc\br\reference.html]],
+[[share\cgilua\doc\\doc\br\sapi.html]],
+[[share\cgilua\doc\\doc\us\cgi-128.gif]],
+[[share\cgilua\doc\\doc\us\index.html]],
+[[share\cgilua\doc\\doc\us\libraries.html]],
+[[share\cgilua\doc\\doc\us\license.html]],
+[[share\cgilua\doc\\doc\us\manual.html]],
+[[share\cgilua\doc\\doc\us\reference.html]],
+[[share\cgilua\doc\\doc\us\sapi.html]],
+}
+,
+}
+
+license = "Kepler"
+name = "cgilua"
+url = "http://www.keplerproject.org/cgilua/"
